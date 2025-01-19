@@ -1,5 +1,6 @@
 public class Licuadora2 implements Interfaz {
-    private boolean encendido, llena;
+    private boolean encendido;
+    private boolean llena;
     private int velocidad;
     
     public Licuadora2() {
@@ -10,7 +11,7 @@ public class Licuadora2 implements Interfaz {
     
     @Override
     public void aumentarVelocidad() {
-        // TODO Auto-generated method stub
+        velocidad +=1;
         
     }
     @Override
@@ -23,12 +24,12 @@ public class Licuadora2 implements Interfaz {
     }
     @Override
     public void encender() {
-        // TODO Auto-generated method stub
+        encendido = true;
         
     }
     @Override
     public void llenar() {
-        // TODO Auto-generated method stub
+        llena = true;
         
     }
     @Override
@@ -36,6 +37,4 @@ public class Licuadora2 implements Interfaz {
         this.llena = false; 
         
     }
-
-    
 }
