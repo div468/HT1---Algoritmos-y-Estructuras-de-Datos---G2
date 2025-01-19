@@ -12,7 +12,9 @@ public class Licuadora2 implements Interfaz {
     @Override
     public void aumentarVelocidad() {
         velocidad +=1;
-        
+        if (velocidad > 10){
+            velocidad = 1;
+        }    
     }
     @Override
     public int consultarVelocidad() {
