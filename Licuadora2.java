@@ -17,6 +17,11 @@ public class Licuadora2 implements Interfaz {
         }    
     }
 
+    public boolean getEncendido(){
+        return encendido;
+    }
+
+    
     @Override
     public int consultarVelocidad() {
         return velocidad;
@@ -30,21 +35,24 @@ public class Licuadora2 implements Interfaz {
     @Override
     public void encender() {
         // Debe estar apagada
-        encendido = true;
-        
+        this.velocidad = 1;
+        this.encendido = true;
+    }
+
+    public void apagar(){
+        this.velocidad = 0;
+        this.encendido = false;
     }
 
     @Override
     public void llenar() {
         // Debe estar vacía
-        llena = true;
-        
+        this.llena = true;
     }
 
     @Override
     public void vaciar() {
         // Debe estar llena
         this.llena = false; 
-        
     }
 }
