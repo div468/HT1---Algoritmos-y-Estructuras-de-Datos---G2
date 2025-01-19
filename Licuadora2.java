@@ -6,14 +6,15 @@ public class Licuadora2 implements Interfaz {
     public Licuadora2() {
         this.encendido = false;
         this.llena = false; 
-        this.velocidad = 0; // Máxima velocidad 3, mínima 1. 0 = apagada
+        this.velocidad = 0;
     }
     
     @Override
     public void aumentarVelocidad() {
-        // Para esto debe estar encendida y llena
-        velocidad += 1;
-        
+        velocidad +=1;
+        if (velocidad > 10){
+            velocidad = 1;
+        }    
     }
 
     @Override

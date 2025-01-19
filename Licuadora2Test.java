@@ -5,7 +5,7 @@ public class Licuadora2Test {
     @Test
     // tests ->
 
-    // Test aumento de velocidad cuando velocidad = 3 -> 
+    // Test aumento de velocidad cuando velocidad = maximo -> 
 
     // Test encendido solo si está llena y encendida -> 
 
