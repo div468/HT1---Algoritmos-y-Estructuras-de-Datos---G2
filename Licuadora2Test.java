@@ -7,6 +7,10 @@ public class Licuadora2Test {
     public void testEnceder() {
         // Inicializar
         Licuadora2 licuadora = new Licuadora2();
+
+        //verifica que inicie apagada
+        assertFalse(licuadora.getEncendido());
+
         licuadora.encender();
 
         // Test encendido
