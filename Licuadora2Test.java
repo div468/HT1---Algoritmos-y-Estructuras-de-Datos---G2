@@ -43,7 +43,7 @@ public class Licuadora2Test {
     //    assertEquals(1, licuadora.consultarVelocidad());
     //}
 
-    // Test apagado con velocidad = 5
+    // Test apagado con velocidad = 5 -> regresa la velocidad a 0 
     @Test
     public void testApagado_velocidad5() {
         // Inicializar
