@@ -3,6 +3,6 @@ public interface Interfaz{
     void llenar();
     void aumentarVelocidad();
     int consultarVelocidad();
-    boolean consultarllenado();
+    boolean consultarLlenado();
     void vaciar();
 }

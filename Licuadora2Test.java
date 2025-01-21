@@ -1,6 +1,12 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-
+/**
+* @Project : HT1 - Algoritmos y Estructuras de Datos
+* @author Diego Calderón
+* Creacion 18.01.2025
+* Ultima modificacion 20.01.2025
+* @FileName: Licuadora2Test.java
+*/
 public class Licuadora2Test {
     // Test encendido 
     @Test

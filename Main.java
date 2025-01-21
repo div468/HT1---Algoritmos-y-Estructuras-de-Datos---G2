@@ -21,12 +21,11 @@ public class Main {
             System.out.println("5. Consultar el contenido de la licuadora");
             System.out.println("6. Vaciar la licuadora");
             System.out.println("7. Apagar la licuadora");
-            System.out.println("8. Cerrar el programa de la licuadora");
             int choice = scanner.nextInt();
             scanner.nextLine();
             switch (choice) {
                 case 1:
-                    if ((licuadora.getEncendido() == false) && (licuadora.consultarllenado() == true)){
+                    if ((licuadora.getEncendido() == false) && (licuadora.consultarLlenado() == true)){
                         licuadora.encender();
                         System.out.println("La licuadora ha sido encendida");
                     }
@@ -36,7 +35,7 @@ public class Main {
                     break;
 
                 case 2:
-                    if (licuadora.consultarllenado()){
+                    if (licuadora.consultarLlenado()){
                         System.out.println("La licuadora ya esta llena");
                     }
                     else {
@@ -65,7 +64,7 @@ public class Main {
                     break;
                 
                 case 5:
-                    if (licuadora.consultarllenado()){
+                    if (licuadora.consultarLlenado()){
                         System.out.println("La licuadora se encuentra llena");
                     }
                     else { 
@@ -78,7 +77,7 @@ public class Main {
                         System.out.println("Para vaciar la licuadora, primero apaguela");
                     }
                     else {
-                        if(licuadora.consultarllenado()== false){
+                        if(licuadora.consultarLlenado()== false){
                             System.out.println("La licuadora ya esta vacia");
                         }
                         else {
@@ -89,16 +88,6 @@ public class Main {
                     break;
                 
                 case 7:
-                    if (licuadora.getEncendido()){
-                        licuadora.apagar();
-                        System.out.println("La licuadora se ha apagado");
-                    }
-                    else {
-                        System.out.println("La licuadora ya esta apagada");
-                    }
-                    break;
-
-                case 8:
                     menu = false;
                     System.out.println("Gracias por usar este programa :)");
                     scanner.close();
@@ -111,4 +100,3 @@ public class Main {
         }
     }
 }
-
