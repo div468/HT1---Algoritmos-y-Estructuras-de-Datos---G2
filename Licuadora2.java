@@ -65,11 +65,6 @@ public class Licuadora2 implements Interfaz {
         this.encendido = true;
     }
 
-    public void apagar(){
-        this.velocidad = 0;
-        this.encendido = false;
-    }
-
     @Override
     public void llenar() {
         // Debe estar vacía
