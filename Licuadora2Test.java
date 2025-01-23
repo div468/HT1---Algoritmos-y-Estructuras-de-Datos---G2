@@ -66,9 +66,11 @@ public class Licuadora2Test {
         // apagar licuadora
         licuadora.setEncendido(false);
 
-        // Debido a que no hay un métdoo apagar, la licuadora permanece con la misma velocidad al apagarse
-        // Se puede configuar para que al setear encendido a false, la velocidad cambie a 0, pero 
-        // otros grupo no lo tienen implementado de esa manera 
-        assertEquals(5, licuadora.consultarVelocidad());
+        // <depende de la implementación del grupo>
+
+        
+        assertEquals(5, licuadora.consultarVelocidad()); // Mantiene su velocidad al apagarse
+
+        //assertEquals(0, licuadora.consultarVelocidad()); // Su velocidad vuelve a 0 al apagarse
     }    
 }
