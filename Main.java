@@ -18,7 +18,7 @@ public class Main {
         // Se inicializan variables necesarias para el funcionamiento del programa,
         boolean menu = true;
         Scanner scanner = new Scanner(System.in);
-        Licuadora100 licuadora = new Licuadora100();
+        Licuadora2 licuadora = new Licuadora2();
         while (menu) {
             // Se muestran las opciones capaces de realizar el programa
             System.out.println("\nIngrese el numero de la opcion que desea realizar");
